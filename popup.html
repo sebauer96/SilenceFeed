@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>SilenceFeed</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            width: 300px;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #f5f5f5;
+            color: #333;
+            border-radius: 8px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        h3 {
+            margin-top: 0;
+            font-size: 1.5em;
+            color: #007BFF;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h4 {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 10px;
+            margin-top: 0;
+        }
+
+        .input-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            gap: 10px; /* Espacio entre el input y el botón */
+        }
+
+        input[type="text"] {
+            flex: 1;
+            padding: 8px; /* Reducir el padding */
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 0.9em;
+        }
+
+        .silence-button {
+            width: 30px;
+            height: 30px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .silence-button:hover {
+            background-color: #0056b3;
+        }
+
+        ul {
+            padding: 0;
+            list-style: none;
+            margin-bottom: 15px;
+        }
+
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 6px 8px; /* Reducir el padding */
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 5px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+            font-size: 0.9em; /* Tamaño de fuente más pequeño */
+        }
+
+        li button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            transition: stroke 0.3s;
+        }
+
+        li button svg {
+            stroke: #333; /* Negro por defecto */
+            width: 20px;
+            height: 20px;
+        }
+
+        li button:hover svg {
+            stroke: #dc3545; /* Rojo al hacer hover */
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .separator {
+            margin: 20px 0;
+            border-top: 1px solid #ddd;
+        }
+
+        #openOptions {
+            background-color: #28a745;
+            margin-top: 15px;
+            border: none;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 1em;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+
+        #openOptions:hover {
+            background-color: #218838;
+        }
+        .spinner-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .spinner-container label {
+            margin-right: 10px;
+            font-size: 0.9em;
+            color: #333;
+        }
+
+        .spinner-container select {
+            padding: 6px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            font-size: 0.9em;
+            cursor: pointer;
+        }
+
+        .input-group span {
+            font-size: 1em;
+            color: #007BFF;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h3 id="appName"></h3>
+
+    <div class="section">
+        <h4 id="silenceKeywords"></h4>
+        <div class="input-group">
+            <input type="text" id="keywordInput" maxlength="20">
+            <button id="addKeyword" class="silence-button">+</button>
+        </div>
+        <ul id="keywordsList"></ul>
+    </div>
+
+    <div class="separator"></div>
+
+    <div class="section">
+        <h4 id="silenceAccounts"></h4>
+        <div class="input-group account-group">
+            <span>@</span>
+            <input type="text" id="accountInput" maxlength="20">
+            <button id="addAccount" class="silence-button">+</button>
+        </div>
+        <ul id="accountsList"></ul>
+        <div class="spinner-container">
+            <label for="actionSelector" id="actionSelectorLabel"></label>
+            <select id="actionSelector">
+                <option value="blur" id="blurOption"></option>
+                <option value="delete" id="deleteOption"></option>
+            </select>
+        </div>
+    </div>
+
+    <script src="popup-localization.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html>

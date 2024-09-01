@@ -1,0 +1,39 @@
+{
+    "appName": {
+      "message": "SilenceFeed: Limpiador de Redes Sociales"
+    },
+    "appDescription": {
+      "message": "Filtra y silencia contenido no deseado en tus feeds de redes sociales (X y LinkedIn). Controla lo que ves bloqueando palabras clave, temas y cuentas en varios idiomas."
+    },
+    "silenceKeywords": {
+      "message": "Silenciar palabras clave"
+    },
+    "silenceAccounts": {
+      "message": "Silenciar cuentas"
+    },
+    "actionSelectorLabel": {
+      "message": "Acción:"
+    },
+    "blurOption": {
+      "message": "Blurear"
+    },
+    "deleteOption": {
+      "message": "Borrar"
+    },
+    "openOptions": {
+      "message": "Abrir Opciones"
+    },
+    "addKeywordButton": {
+      "message": "Añadir palabra clave"
+    },
+    "addAccountButton": {
+      "message": "Añadir cuenta"
+    },
+    "user": {
+      "message": "Usuario"
+    },
+    "fullName": {
+      "message": "Nombre completo"
+    }
+  }
+  

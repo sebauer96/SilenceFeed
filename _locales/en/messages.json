@@ -1,0 +1,39 @@
+{
+    "appName": {
+      "message": "SilenceFeed: Social Media Cleanser"
+    },
+    "appDescription": {
+      "message": "Filter and silence unwanted content in your social media feeds (x and LinkedIn). Control what you see by blocking keywords, topics, and accounts in multiple languages."
+    },
+    "silenceKeywords": {
+      "message": "Mute keywords"
+    },
+    "silenceAccounts": {
+      "message": "Mute accounts"
+    },
+    "actionSelectorLabel": {
+      "message": "Action:"
+    },
+    "blurOption": {
+      "message": "Blur"
+    },
+    "deleteOption": {
+      "message": "Delete"
+    },
+    "openOptions": {
+      "message": "Open Options"
+    },
+    "addKeywordButton": {
+      "message": "Add Keyword"
+    },
+    "addAccountButton": {
+      "message": "Add Account"
+    },
+    "user": {
+      "message": "User"
+    },
+    "fullName": {
+      "message": "Fullname"
+    }
+  }
+  
