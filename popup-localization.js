@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('actionSelectorLabel').textContent = chrome.i18n.getMessage('actionSelectorLabel');
     document.getElementById('blurOption').textContent = chrome.i18n.getMessage('blurOption');
     document.getElementById('deleteOption').textContent = chrome.i18n.getMessage('deleteOption');
-    document.getElementById('openOptions').textContent = chrome.i18n.getMessage('openOptions');
 
     // Configuración de placeholders
     document.getElementById('keywordInput').placeholder = chrome.i18n.getMessage('keywordPlaceholder');
