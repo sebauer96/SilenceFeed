@@ -51,3 +51,5 @@ If you have any questions or run into any issues, feel free to open an issue on 
 - Thanks to all contributors who have helped improve SilenceFeed.
 - Special thanks to the open-source community for their invaluable resources and tools.
 
+## Acknowledgements
+[![Invitame un café en cafecito.app](https://cdn.cafecito.app/imgs/buttons/button_6.svg)](https://cafecito.app/sebauer96)

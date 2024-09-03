@@ -4,7 +4,7 @@
   "description": "__MSG_appDescription__",
   "version": "1.0",
   "default_locale": "en",
-  "permissions": ["storage", "activeTab", "scripting", "tabs"],
+  "permissions": ["storage", "activeTab", "tabs"],
   "background": {
     "service_worker": "background.js"
   },

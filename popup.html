@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>SilenceFeed</title>
@@ -34,12 +35,14 @@
             display: flex;
             align-items: center;
             margin-bottom: 10px;
-            gap: 10px; /* Espacio entre el input y el botón */
+            gap: 10px;
+            /* Espacio entre el input y el botón */
         }
 
         input[type="text"] {
             flex: 1;
-            padding: 8px; /* Reducir el padding */
+            padding: 8px;
+            /* Reducir el padding */
             border: 1px solid #ddd;
             border-radius: 8px;
             box-sizing: border-box;
@@ -75,13 +78,15 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 6px 8px; /* Reducir el padding */
+            padding: 6px 8px;
+            /* Reducir el padding */
             background-color: white;
             border: 1px solid #ddd;
             border-radius: 8px;
             margin-bottom: 5px;
             box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
-            font-size: 0.9em; /* Tamaño de fuente más pequeño */
+            font-size: 0.9em;
+            /* Tamaño de fuente más pequeño */
         }
 
         li button {
@@ -98,13 +103,15 @@
         }
 
         li button svg {
-            stroke: #333; /* Negro por defecto */
+            stroke: #333;
+            /* Negro por defecto */
             width: 20px;
             height: 20px;
         }
 
         li button:hover svg {
-            stroke: #dc3545; /* Rojo al hacer hover */
+            stroke: #dc3545;
+            /* Rojo al hacer hover */
         }
 
         .section {
@@ -115,6 +122,7 @@
             margin: 20px 0;
             border-top: 1px solid #ddd;
         }
+
         .spinner-container {
             display: flex;
             align-items: center;
@@ -141,8 +149,22 @@
             color: #007BFF;
             font-weight: bold;
         }
+        .flex {
+            display: flex;
+        }
+        .flex-column {
+            flex-direction: column;
+        }
+        .flex-center {
+            justify-content: center;
+            align-items: center;
+        }
+        .w-100 {
+            width: 100%;
+        }
     </style>
 </head>
+
 <body>
     <h3 id="appName"></h3>
 
@@ -172,9 +194,17 @@
                 <option value="delete" id="deleteOption"></option>
             </select>
         </div>
+        <div class="flex flex-center w-100 flex-column">
+            <p id="donateP"></p>
+            <a class="btn-donate" href='https://cafecito.app/sebauer96' rel='noopener' target='_blank'><img
+                    srcset='https://cdn.cafecito.app/imgs/buttons/button_6.png 1x, https://cdn.cafecito.app/imgs/buttons/button_6_2x.png 2x, https://cdn.cafecito.app/imgs/buttons/button_6_3.75x.png 3.75x'
+                    src='https://cdn.cafecito.app/imgs/buttons/button_6.png'
+                    alt='Invitame un café en cafecito.app' /></a>
+        </div>
     </div>
 
     <script src="popup-localization.js"></script>
     <script src="popup.js"></script>
 </body>
+
 </html>

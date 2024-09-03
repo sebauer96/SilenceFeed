@@ -1,36 +1,38 @@
 {
-    "appName": {
-      "message": "SilenceFeed: Limpiador de Redes Sociales"
-    },
-    "appDescription": {
-      "message": "Filtra y silencia contenido no deseado en tus feeds de redes sociales (X y LinkedIn). Controla lo que ves bloqueando palabras clave, temas y cuentas en varios idiomas."
-    },
-    "silenceKeywords": {
-      "message": "Silenciar palabras clave"
-    },
-    "silenceAccounts": {
-      "message": "Silenciar cuentas"
-    },
-    "actionSelectorLabel": {
-      "message": "Acción:"
-    },
-    "blurOption": {
-      "message": "Blurear"
-    },
-    "deleteOption": {
-      "message": "Borrar"
-    },
-    "addKeywordButton": {
-      "message": "Añadir palabra clave"
-    },
-    "addAccountButton": {
-      "message": "Añadir cuenta"
-    },
-    "user": {
-      "message": "Usuario"
-    },
-    "fullName": {
-      "message": "Nombre completo"
-    }
+  "appName": {
+    "message": "SilenceFeed: Social Media Cleaner"
+  },
+  "appDescription": {
+    "message": "Silence unwanted content in social media feeds (X and LinkedIn) by blocking keywords, topics, and accounts in multiple languages."
+  },
+  "silenceKeywords": {
+    "message": "Mute keywords"
+  },
+  "silenceAccounts": {
+    "message": "Mute accounts"
+  },
+  "actionSelectorLabel": {
+    "message": "Action:"
+  },
+  "blurOption": {
+    "message": "Blur"
+  },
+  "deleteOption": {
+    "message": "Delete"
+  },
+  "addKeywordButton": {
+    "message": "Add Keyword"
+  },
+  "addAccountButton": {
+    "message": "Add Account"
+  },
+  "user": {
+    "message": "User"
+  },
+  "fullName": {
+    "message": "Fullname"
+  },
+  "donate": {
+    "message": "Apóyanos"
   }
-  
+}

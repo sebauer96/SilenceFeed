@@ -3,7 +3,7 @@
       "message": "SilenceFeed: Limpeza das Redes Sociais"
     },
     "appDescription": {
-      "message": "Filtre e silencie conteúdos indesejados nos seus feeds de redes sociais (X e LinkedIn). Controle o que você vê bloqueando palavras-chave, tópicos e contas em vários idiomas."
+      "message": "Silencie conteúdo indesejado em redes sociais (X e LinkedIn) bloqueando palavras-chave, tópicos e contas em vários idiomas."
     },
     "silenceKeywords": {
       "message": "Silenciar palavras-chave"
@@ -31,6 +31,9 @@
     },
     "fullName": {
       "message": "Nome completo"
+    },
+    "donate": {
+      "message": "Apoie-nos"
     }
   }
   
